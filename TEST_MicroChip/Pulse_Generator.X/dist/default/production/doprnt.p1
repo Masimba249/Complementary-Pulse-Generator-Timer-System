@@ -1,0 +1,293 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"409 C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/bits/alltypes.h
+[s S1 ]
+[n S1 _IO_FILE ]
+"98 C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdio.h
+[v _fputc `(i ~T0 @X0 0 ef2`i`*S1 ]
+"113
+[v _fputs `(i ~T0 @X0 0 ef2`*Cuc`*S1 ]
+"1182 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+[u S16 `l 1 `ul 1 `d 1 ]
+[n S16 . sint uint f ]
+"14 C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdarg.h
+[v ___va_arg `(*v ~T0 @X0 0 ev`*v ]
+[p i ___va_arg ]
+"153 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+[v _prec `i ~T0 @X0 1 s ]
+[v _width `i ~T0 @X0 1 s ]
+"154
+[v _flags `uc ~T0 @X0 1 s ]
+"185
+[v _dbuf `uc ~T0 @X0 -> 32 `i s ]
+"193
+[v _pad `(v ~T0 @X0 1 sf3`*S1`*uc`i ]
+"194
+{
+[e :U _pad ]
+"193
+[v _fp `*S1 ~T0 @X0 1 r1 ]
+[v _buf `*uc ~T0 @X0 1 r2 ]
+[v _p `i ~T0 @X0 1 r3 ]
+"194
+[f ]
+"195
+[v _i `i ~T0 @X0 1 a ]
+"205
+[e $ ! < _p -> 0 `i 11  ]
+{
+"206
+[e = _p -> 0 `i ]
+"207
+}
+[e :U 11 ]
+"208
+[e = _i -> 0 `i ]
+"209
+[e $U 12  ]
+[e :U 13 ]
+{
+"210
+[e ( _fputc (2 , -> -> 32 `ui `i _fp ]
+"211
+[e =+ _i -> 1 `i ]
+"212
+}
+[e :U 12 ]
+"209
+[e $ < _i _p 13  ]
+[e :U 14 ]
+"218
+[e ( _fputs (2 , _buf _fp ]
+"226
+[e :UE 10 ]
+}
+"1177
+[v _vfpfcnvrt `(v ~T0 @X0 1 sf3`*S1`**uc`**v ]
+"1178
+{
+[e :U _vfpfcnvrt ]
+"1177
+[v _fp `*S1 ~T0 @X0 1 r1 ]
+[v _fmt `**uc ~T0 @X0 1 r2 ]
+[v _ap `**v ~T0 @X0 1 r3 ]
+"1178
+[f ]
+"1179
+[v _c `uc ~T0 @X0 1 a ]
+[v _cp `*uc ~T0 @X0 1 a ]
+"1180
+[v _done `a ~T0 @X0 1 a ]
+"1188
+[v _convarg `S16 ~T0 @X0 1 a ]
+"1201
+[e $ ! == -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `ui -> 37 `ui 17  ]
+{
+"1202
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"1204
+[e = _flags -> = _width -> 0 `i `uc ]
+"1205
+[e = _prec -U -> 1 `i ]
+"1291
+[e = _cp *U _fmt ]
+"1293
+[e = _c *U _cp ]
+"1294
+[e $U 19  ]
+{
+"1308
+[e :U 20 ]
+"1309
+[e ++ _cp * -> -> 1 `i `x -> -> # *U _cp `i `x ]
+"1316
+[e $U 18  ]
+"1335
+[e :U 21 ]
+"1350
+[e = _c -> -> 105 `ui `uc ]
+"1351
+[e $U 18  ]
+"1352
+[e :U 22 ]
+"1353
+[e = _c -> -> 0 `i `uc ]
+"1354
+[e $U 18  ]
+"1355
+}
+[e $U 18  ]
+[e :U 19 ]
+[e [\ _c , $ -> -> 108 `ui `i 20
+ , $ -> -> 117 `ui `i 21
+ 22 ]
+[e :U 18 ]
+"1439
+[e $ ! || != -> 0 `i -> 0 `i == -> *U _cp `ui -> 117 `ui 23  ]
+"1452
+{
+"1454
+[e $U 25  ]
+{
+"1455
+[e :U 26 ]
+"1456
+[e = . _convarg 1 -> *U -> ( ___va_arg , (. -> *U -> _ap `**ui `*v -> -> 0 `i `ui `*ui `ul ]
+"1457
+[e $U 24  ]
+"1469
+[e :U 27 ]
+"1470
+[e = . _convarg 1 *U -> ( ___va_arg , (. -> *U -> _ap `**ul `*v -> -> 0 `i `ul `*ul ]
+"1471
+[e $U 24  ]
+"1493
+}
+[e $U 24  ]
+[e :U 25 ]
+[e [\ _c , $ -> -> 105 `ui `i 26
+ , $ -> -> 108 `ui `i 27
+ 24 ]
+[e :U 24 ]
+"1497
+[e = *U _fmt + _cp * -> -> 1 `i `x -> -> # *U _cp `i `x ]
+"1498
+[e $U 29  ]
+{
+"1523
+[e :U 30 ]
+"1525
+[e = _c -> -> # _dbuf `ui `uc ]
+"1526
+[e :U 33 ]
+{
+"1527
+[e = *U + &U _dbuf * -> =- _c -> -> 1 `i `uc `ux -> -> # *U &U _dbuf `ui `ux -> + % . _convarg 1 -> -> -> 10 `i `l `ul -> -> 48 `ui `ul `uc ]
+"1528
+[e =/ . _convarg 1 -> -> -> 10 `i `l `ul ]
+"1532
+}
+[e $ && != . _convarg 1 -> -> -> 0 `i `l `ul != -> _c `i -> 0 `i 33  ]
+[e :U 32 ]
+"1533
+[e $U 34  ]
+[e :U 35 ]
+{
+"1534
+[e ( _fputc (2 , -> *U + &U _dbuf * -> ++ _c -> -> 1 `i `uc `ux -> -> # *U &U _dbuf `ui `ux `i _fp ]
+"1535
+}
+[e :U 34 ]
+"1533
+[e $ != -> _c `ui -> # _dbuf `ui 35  ]
+[e :U 36 ]
+"1539
+[e $UE 15  ]
+"1589
+}
+[e $U 28  ]
+[e :U 29 ]
+[e [\ *U _cp , $ -> -> 117 `ui `i 30
+ 28 ]
+[e :U 28 ]
+"1590
+}
+[e :U 23 ]
+"1656
+[e = _done -> -> 0 `i `a ]
+"1657
+[e $ ! == -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `ui -> 115 `ui 37  ]
+{
+"1658
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"1659
+[e = _done -> -> 1 `i `a ]
+"1660
+}
+[e $U 38  ]
+"1661
+[e :U 37 ]
+[e $ ! && && == -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `ui -> 108 `ui == -> *U + *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x `ui -> 108 `ui == -> *U + *U _fmt * -> -> 2 `i `x -> -> # *U *U _fmt `i `x `ui -> 115 `ui 39  ]
+{
+"1662
+[e =+ *U _fmt * -> -> 3 `i `x -> -> # *U *U _fmt `i `x ]
+"1663
+[e = _done -> -> 1 `i `a ]
+"1664
+}
+[e :U 39 ]
+[e :U 38 ]
+"1665
+[e $ ! != -> _done `i -> 0 `i 40  ]
+{
+"1669
+{
+[v _cp `*uc ~T0 @X0 1 a ]
+[e = _cp *U -> ( ___va_arg , (. -> *U -> _ap `***uc `*v -> -> 0 `i `*uc `**uc ]
+[e $U 44  ]
+[e :U 41 ]
+{
+"1670
+[e ( _fputc (2 , -> *U _cp `i _fp ]
+"1674
+}
+[e ++ _cp * -> -> 1 `i `x -> -> # *U _cp `i `x ]
+[e :U 44 ]
+[e $ != -> *U _cp `ui -> 0 `ui 41  ]
+[e :U 42 ]
+}
+"1678
+[e $UE 15  ]
+"1684
+}
+[e :U 40 ]
+"1806
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"1807
+[e ) -> -> 0 `i `v ]
+[e $UE 15  ]
+"1808
+}
+[e :U 17 ]
+"1811
+[e ( _fputc (2 , -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `i _fp ]
+"1812
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"1813
+[e ) -> -> 1 `i `v ]
+[e $UE 15  ]
+"1814
+[e :UE 15 ]
+}
+"1817
+[v _vfprintf `(i ~T0 @X0 1 ef3`*S1`*Cuc`**v ]
+"1818
+{
+[e :U _vfprintf ]
+"1817
+[v _fp `*S1 ~T0 @X0 1 r1 ]
+[v _fmt `*Cuc ~T0 @X0 1 r2 ]
+[v _ap `**v ~T0 @X0 1 r3 ]
+"1818
+[f ]
+"1820
+[v _cfmt `*uc ~T0 @X0 1 a ]
+"1822
+[e = _cfmt _fmt ]
+"1826
+[e $U 46  ]
+[e :U 47 ]
+{
+"1830
+[e ( _vfpfcnvrt (3 , , _fp &U _cfmt _ap ]
+"1831
+}
+[e :U 46 ]
+"1826
+[e $ != -> *U _cfmt `i -> 0 `i 47  ]
+[e :U 48 ]
+"1835
+[e ) -> 0 `i ]
+[e $UE 45  ]
+"1840
+[e :UE 45 ]
+}
