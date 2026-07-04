@@ -5,6 +5,22 @@ This project involves the development of an embedded system designed to generate
 
 ---
 
+## Demo Videos
+
+**Demo 1** — Setting the pulse on/off times and timer via the keypad.
+
+![Demo 1 preview](demo2.gif)
+
+*Full-quality recording: [Display2.mp4](Display2.mp4).*
+
+**Demo 2** — Full walkthrough of the pulse generator and timer in operation.
+
+![Demo 2 preview](demo5.gif)
+
+*Full-quality recording: [Display5.mp4](Display5.mp4).*
+
+---
+
 ##  Hardware Specifications
 
 The system is built using the following core hardware components:
@@ -81,17 +97,3 @@ The LCD displaying the pulse "on time" set via the keypad.
 Captured complementary pulse waveform verifying correct on/off timing.
 
 ![Oscilloscope pulse waveform](<image (2).png>)
-
-### Demo Videos
-
-**Demo 1** — Setting the pulse on/off times and timer via the keypad.
-
-![Demo 1 preview](demo2.gif)
-
-*Full-quality recording: [Display2.mp4](Display2.mp4).*
-
-**Demo 2** — Full walkthrough of the pulse generator and timer in operation.
-
-![Demo 2 preview](demo5.gif)
-
-*Full-quality recording: [Display5.mp4](Display5.mp4).*
