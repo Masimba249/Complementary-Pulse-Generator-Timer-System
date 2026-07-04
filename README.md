@@ -40,3 +40,58 @@ The system is programmed to fulfill the following operational criteria:
 * The timer starts automatically as soon as the ON/OFF button is pressed to turn on the pulses.
 * The pulses will turn off automatically once the timer finishes its counting sequence.
 * A status LED is configured to turn ON when the pulses are active and will turn OFF when the pulses are inactive.
+
+---
+
+## Circuit Design
+
+### Full System Schematic (Proteus)
+LCD, keypad, and PIC18F microcontroller wiring as simulated in Proteus.
+
+![Full system schematic](<image (4).png>)
+
+### Keypad Matrix Schematic
+21-switch keypad wired as a 5x4 matrix.
+
+![Keypad matrix schematic](<image (3).png>)
+
+---
+
+## Hardware Build
+
+### Graphic LCD Display Module
+The 12864B graphic LCD used for real-time parameter monitoring.
+
+![Graphic LCD front](Display.jpeg)
+
+![Graphic LCD back with I2C backpack](<Display (2).jpeg>)
+
+### LCD Output
+The LCD displaying the pulse "on time" set via the keypad.
+
+![LCD showing Set Time On](image.png)
+
+![LCD showing Set Time On (alternate angle)](<image (1).png>)
+
+---
+
+## Testing & Verification
+
+### Oscilloscope Output
+Captured complementary pulse waveform verifying correct on/off timing.
+
+![Oscilloscope pulse waveform](<image (2).png>)
+
+### Demo Videos
+
+**Demo 1** — Setting the pulse on/off times and timer via the keypad.
+
+![Demo 1 preview](demo2.gif)
+
+*Full-quality recording: [Display2.mp4](Display2.mp4).*
+
+**Demo 2** — Full walkthrough of the pulse generator and timer in operation.
+
+![Demo 2 preview](demo5.gif)
+
+*Full-quality recording: [Display5.mp4](Display5.mp4).*
